@@ -1,3 +1,3 @@
 chrome.runtime.onInstalled.addListener(() => {
-  console.log("[Handshake Identity Bypass] installed");
+  console.log("[Tinder Identity Bypass] installed");
 });

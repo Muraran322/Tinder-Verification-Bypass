@@ -1,5 +1,5 @@
 (function () {
-  const TAG = "%c[Handshake Identity Bypass]";
+  const TAG = "%c[Tinder Identity Bypass]";
   const STYLE = "color:#0f0;font-weight:bold";
   const log = (...a) => console.log(TAG, STYLE, ...a);
 
@@ -227,7 +227,7 @@
             });
           }
         } catch (e) {
-          console.error("[Handshake Identity Bypass] fetch error", e);
+          console.error("[Tinder Identity Bypass] fetch error", e);
         }
       }
       return response;
@@ -258,7 +258,7 @@
               log("Patched XHR", url.split("?")[0].replace(/https:\/\/[^/]+/, "").slice(-90));
             }
           } catch (e) {
-            console.error("[Handshake Identity Bypass] XHR error", e);
+            console.error("[Tinder Identity Bypass] XHR error", e);
           }
         }
       });

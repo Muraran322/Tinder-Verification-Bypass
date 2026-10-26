@@ -1,16 +1,16 @@
 {
   "manifest_version": 3,
-  "name": "Handshake Identity & KYC Bypass",
+  "name": "Tinder Identity & KYC Bypass",
   "version": "2.2.0",
   "description": "Forces identity verification completed + DOM fix for checklist / steps left.",
-  "host_permissions": ["*://*.joinhandshake.com/*"],
+  "host_permissions": ["*://*.tinder.com//*"],
   "background": { "service_worker": "background.js" },
   "content_scripts": [{
-    "matches": ["*://*.joinhandshake.com/*"],
+    "matches": ["*://*.tinder.com/*"],
     "js": ["bypass.js"],
     "run_at": "document_start",
     "all_frames": true,
     "world": "MAIN"
   }],
-  "action": { "default_title": "Handshake Identity Bypass" }
+  "action": { "default_title": "Tinder Identity Bypass" }
 }
